@@ -27,12 +27,12 @@ pipeline:
                       steps:
                           - step:
                                 type: BuildAndPushDockerRegistry
-                                name: build
-                                identifier: build
+                                name: build and push
+                                identifier: build_and_push
                                 spec:
                                     connectorRef: account.dockerhub
-                                    repo: labs
+                                    repo: rymonteiro/labs:latest
                                     tags:
-                                        - 1.0.0
+                                        - rymonteiro/gohelloworld:latest
                                     optimize: true
               variables: []
