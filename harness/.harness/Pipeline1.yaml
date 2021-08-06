@@ -6,23 +6,24 @@ pipeline:
                   infrastructure:
                       type: KubernetesDirect
                       spec:
-                          namespace: vfunction
                           connectorRef: account.k8s
+                          namespace: vfunction
                   execution:
                       steps:
                           - step:
                                 type: BuildAndPushDockerRegistry
                                 spec:
+                                    connectorRef: dockerhub
+                                    repo: labs
                                     tags:
                                         - latest
-                                    repo: rymonteiro/labs
                                     optimize: true
-                                    connectorRef: account.dockerhub
                                 name: build and push
                                 identifier: build_and_push
                   cloneCodebase: true
               name: stage1
               identifier: stage1
+              variables: []
     properties:
         ci:
             codebase:
