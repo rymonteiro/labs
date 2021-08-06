@@ -35,4 +35,5 @@ pipeline:
                                     tags:
                                         - latest
                                     optimize: true
+                                failureStrategies: []
               variables: []
