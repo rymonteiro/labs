@@ -14,7 +14,7 @@ pipeline:
                                 type: BuildAndPushDockerRegistry
                                 spec:
                                     connectorRef: dockerhub
-                                    repo: labs
+                                    repo: rymonteiro/labs
                                     tags:
                                         - latest
                                     optimize: true
