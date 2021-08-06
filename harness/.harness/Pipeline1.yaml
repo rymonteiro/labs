@@ -27,13 +27,13 @@ pipeline:
                       steps:
                           - step:
                                 type: BuildAndPushDockerRegistry
-                                name: build
-                                identifier: build
+                                name: build and push
+                                identifier: build_and_push
                                 spec:
                                     connectorRef: account.dockerhub
-                                    repo: goHelloWorldServer-main/goHelloWorldServer-main
+                                    repo: rymonteiro/labs
                                     tags:
                                         - latest
+                                    dockerfile: labs/goHelloWorldServer-main/goHelloWorldServer-main
                                     optimize: true
-                                failureStrategies: []
               variables: []
