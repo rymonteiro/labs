@@ -33,7 +33,6 @@ pipeline:
                                     connectorRef: account.dockerhub
                                     repo: rymonteiro/labs:latest
                                     tags:
-                                        - rymonteiro/paymentservice:latest
-                                    dockerfile: labs/goHelloWorldServer-main/goHelloWorldServer-main
+                                        - rymonteiro/gohelloworld:latest
                                     optimize: true
               variables: []
