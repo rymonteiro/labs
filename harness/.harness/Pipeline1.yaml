@@ -31,9 +31,9 @@ pipeline:
                                 identifier: build_and_push
                                 spec:
                                     connectorRef: account.dockerhub
-                                    repo: rymonteiro/labs
+                                    repo: rymonteiro/labs:latest
                                     tags:
-                                        - latest
-                                    context: labs/goHelloWorldServer-main/goHelloWorldServer-main
+                                        - rymonteiro/paymentservice:latest
+                                    dockerfile: labs/goHelloWorldServer-main/goHelloWorldServer-main
                                     optimize: true
               variables: []
