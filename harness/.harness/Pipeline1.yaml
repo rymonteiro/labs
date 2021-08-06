@@ -31,8 +31,8 @@ pipeline:
                                 identifier: build_and_push
                                 spec:
                                     connectorRef: account.dockerhub
-                                    repo: rymonteiro/labs
+                                    repo: rymonteiro/labs:latest
                                     tags:
-                                        - rymonteiro/gohelloworld:latest
+                                        - rymonteiro/labs:latest
                                     optimize: true
               variables: []
