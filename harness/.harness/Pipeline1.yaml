@@ -31,8 +31,8 @@ pipeline:
                                 identifier: build
                                 spec:
                                     connectorRef: account.dockerhub
-                                    repo: labs
+                                    repo: labs/goHelloWorldServer-main/goHelloWorldServer-main
                                     tags:
-                                        - 1.0.0
+                                        - latest
                                     optimize: true
               variables: []
