@@ -1,0 +1,14 @@
+inputSet:
+  identifier: "set1"
+  name: "set1"
+  orgIdentifier: "vFunction"
+  projectIdentifier: "labs"
+  pipeline:
+    identifier: "Pipeline1"
+    properties:
+      ci:
+        codebase:
+          build:
+            type: "tag"
+            spec:
+              tag: "v1.0.0-Beta"
